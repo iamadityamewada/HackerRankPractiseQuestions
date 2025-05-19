@@ -22,3 +22,13 @@
 # Given list is . The maximum score is , second maximum is . Hence, we print  as the runner-up score.
 
 
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    
+    highest = max(arr)
+    runner_list = [score for score in arr if score!=highest]
+    
+    print(max(runner_list))
+    
+               
